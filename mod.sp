@@ -1,3 +1,3 @@
 mod "local" {
-  title = "steampipe-mod-wa"
+  title = "steampipe-mod-aws-wa"
 }
