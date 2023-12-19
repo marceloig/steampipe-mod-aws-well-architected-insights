@@ -1,4 +1,5 @@
 # steampipe-mod-aws-wa-insights
+![benchmark_well_architected_0](docs/benchmark_well_architected_0.png)
 
 ## Getting started
 
