@@ -1,3 +1,4 @@
+
 mod "local" {
-  title = "steampipe-mod-aws-wa"
+  title = "steampipe-mod-aws-wa-insights"
 }

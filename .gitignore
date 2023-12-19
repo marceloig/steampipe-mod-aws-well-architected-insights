@@ -32,3 +32,26 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Swap files
+*.swp
+
+# Steampipe variable files
+*.spvars
+*.auto.spvars
+
+# Steampipe mod dependencies
+.steampipe
+
+# Cache json files
+*.cache.json
+
+# Ignore Desktop Services Store files
+.DS_Store
