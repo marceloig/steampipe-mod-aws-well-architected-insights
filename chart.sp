@@ -1,16 +1,18 @@
-chart "media_total_risk" {
+chart "risk_by_pillar" {
     type = "donut"
-    title = "Excelencia Operacional"
 
-    series "media_total_risk" {
+    series "value" {
         point "HIGH" {
             color = "alert"
         }
         point "MEDIUM" {
-            color = "#ffab40"
+            color = "#FF9900"
         }
         point "NONE" {
             color = "ok"
+        }
+        point "UNANSWERED" {
+            color = "gray"
         }
     }
 
@@ -20,32 +22,47 @@ chart "media_total_risk" {
     }
     
     query = query.media_total_risk
-    args = {
-        "pillar" = "operationalExcellence"
-    }
     width = 2
 }
 
 chart "benchmark_risk"{
     type = "column"
-    series "MEDIUM" {
-        title = "Medium"
-        color = "#ffab40"
-    }
     query = query.benchmark_risk
 }
 
 chart "workload_risk_by_pillar"{
     type  = "donut"
-    series "count" {
+    series "value" {
         point "HIGH" {
             color = "alert"
         }
         point "MEDIUM" {
-            color = "#ffab40"
+            color = "#FF9900"
         }
         point "NONE" {
             color = "ok"
+        }
+        point "UNANSWERED" {
+            color = "gray"
+        }
+    }
+    query = query.workload_risk_by_pillar
+}
+
+chart "chart_overview"{
+    type  = "donut"
+    series "value" {
+        point "HIGH" {
+            color = "alert"
+        }
+        point "MEDIUM" {
+            color = "#FF9900"
+        }
+        point "NONE" {
+            color = "ok"
+        }
+        point "UNANSWERED" {
+            color = "gray"
         }
     }
     query = query.workload_risk_by_pillar
